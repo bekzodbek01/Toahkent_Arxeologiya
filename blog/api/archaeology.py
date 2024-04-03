@@ -15,6 +15,6 @@ class ArchaeologyListViews(generics.ListAPIView):
         return Archaeology.objects.all()
 
 
-class ArchaeologyRetrieveAPIView(RetrieveAPIView):
+class ArchaeologyRetrievePIView(RetrieveAPIView):
     queryset = Archaeology.objects.all()
     serializer_class = ArchaeologySerializers
