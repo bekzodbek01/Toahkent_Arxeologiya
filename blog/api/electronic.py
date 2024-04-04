@@ -1,6 +1,7 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from blog.models import Electronic
-from blog.serializer import ElectronicSerializers
+
+from electronic.models import Electronic
+from electronic.serializer import ElectronicSerializers
 
 
 class ElectronicListAPIView(ListAPIView):

@@ -1,6 +1,6 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from blog.models import Picture
-from blog.serializer import PictureSerializers
+from picture.models import Picture
+from picture.serializer import PictureSerializers
 
 
 class PictureListAPIView(ListAPIView):

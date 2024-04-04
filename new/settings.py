@@ -29,9 +29,18 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog.apps.BlogConfig',
+    'about.apps.AboutConfig',
+    'archaeology.apps.ArchaeologyConfig',
+    'items.apps.ItemsConfig',
+    'scientists.apps.ScientistsConfig',
+    'video.apps.VideoConfig',
+    'picture.apps.PictureConfig',
+    'news.apps.NewsConfig',
+    'electronic.apps.ElectronicConfig',
     'rest_framework',
     'ckeditor',
     "modeltranslation",
+    'contact.apps.ContactConfig',
 ]
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)

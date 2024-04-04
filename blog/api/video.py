@@ -1,6 +1,6 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from blog.models import Video
-from blog.serializer import VideoSerializers
+from video.models import Video
+from video.serializer import VideoSerializers
 
 
 class VideoListAPIView(ListAPIView):
@@ -11,3 +11,5 @@ class VideoListAPIView(ListAPIView):
 class VideoRetrieveAPIView(RetrieveAPIView):
     queryset = Video.objects.all()
     serializer_class = VideoSerializers
+
+

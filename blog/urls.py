@@ -7,6 +7,7 @@ from blog.api.news import NewsListAPIView,NewsRetrieveAPIView
 from blog.api.scientists import ScientistsListAPIView,ScientistsRetrieveAPIView
 from blog.api.video import VideoListAPIView,VideoRetrieveAPIView
 from blog.api.picture import PictureListAPIView,PictureRetrieveAPIView
+from blog.api.contact import ContactListCreateView
 urlpatterns = [
 
     path('about/',AboutListAPIView.as_view()),
@@ -33,5 +34,6 @@ urlpatterns = [
     path('picture/', PictureListAPIView.as_view()),
     path('picture/<int:pk>/', PictureRetrieveAPIView.as_view()),
 
+    path('contact/', ContactListCreateView.as_view()),
 ]
 

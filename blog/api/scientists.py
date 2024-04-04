@@ -1,6 +1,6 @@
 from rest_framework.generics import ListAPIView, RetrieveAPIView
-from blog.models import Scientists
-from blog.serializer import ScientistSerializers
+from scientists.models import Scientists
+from scientists.serializer import ScientistSerializers
 
 
 class ScientistsListAPIView(ListAPIView):

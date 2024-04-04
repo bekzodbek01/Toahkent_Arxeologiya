@@ -1,7 +1,7 @@
 from rest_framework import generics, filters
 from rest_framework.generics import RetrieveAPIView
-from blog.models import Archaeology
-from blog.serializer import ArchaeologySerializers
+from archaeology.models import Archaeology
+from archaeology.serializer import ArchaeologySerializers
 from blog.pagination import ResultsSetPagination
 
 
