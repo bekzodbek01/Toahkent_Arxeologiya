@@ -8,6 +8,9 @@ from blog.api.scientists import ScientistsListAPIView,ScientistsRetrieveAPIView
 from blog.api.video import VideoListAPIView,VideoRetrieveAPIView
 from blog.api.picture import PictureListAPIView,PictureRetrieveAPIView
 from blog.api.contact import ContactListCreateView
+
+from blog.api.down import FileDownAsarView
+
 urlpatterns = [
 
     path('about/',AboutListAPIView.as_view()),
@@ -35,5 +38,8 @@ urlpatterns = [
     path('picture/<int:pk>/', PictureRetrieveAPIView.as_view()),
 
     path('contact/', ContactListCreateView.as_view()),
+
+    path('items/downland/<int:pk>/', FileDownAsarView.as_view()),
+
 ]
 

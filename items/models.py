@@ -7,5 +7,6 @@ class Items(models.Model):
     video = models.FileField(upload_to='video', blank=True, null=True)
     link = models.URLField(verbose_name='link', blank=True, null=True)
     descriptions = models.TextField()
+    downloads = models.IntegerField(default=0)
     create = models.DateTimeField(auto_now_add=True)
     update = models.DateTimeField(auto_now=True)
