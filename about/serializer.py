@@ -3,5 +3,7 @@ from about.models import About
 
 
 class AboutSerializers(serializers.ModelSerializer):
-    model = About
-    fields = ('id', 'descriptions', 'video')
+    class Meta:
+        model = About
+        fields = ('id', 'descriptions', 'video')
+

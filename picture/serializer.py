@@ -3,6 +3,7 @@ from picture.models import Picture
 
 
 class PictureSerializers(serializers.ModelSerializer):
-    model = Picture
-    fields = ('id', 'title','image')
+    class Meta:
+        model = Picture
+        fields = ('id', 'title','image')
 

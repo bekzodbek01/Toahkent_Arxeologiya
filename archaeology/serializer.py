@@ -3,5 +3,6 @@ from archaeology.models import Archaeology
 
 
 class ArchaeologySerializers(serializers.ModelSerializer):
-    model = Archaeology
-    fields = ('id', 'title', 'descriptions', 'video', 'image')
+    class Meta:
+        model = Archaeology
+        fields = ('id', 'title', 'descriptions', 'video', 'image')

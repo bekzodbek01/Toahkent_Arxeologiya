@@ -3,6 +3,7 @@ from electronic.models import Electronic
 
 
 class ElectronicSerializers(serializers.ModelSerializer):
-    model = Electronic
-    fields = ('id', 'title','book')
+    class Meta:
+        model = Electronic
+        fields = ('id', 'title','book')
 

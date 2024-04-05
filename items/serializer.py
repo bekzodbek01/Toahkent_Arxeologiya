@@ -3,5 +3,6 @@ from items.models import Items
 
 
 class ItemsSerializers(serializers.ModelSerializer):
-    model = Items
-    fields = ('id', 'title', 'descriptions', 'video', 'image')
+    class Meta:
+        model = Items
+        fields = ('id', 'title', 'descriptions', 'video', 'image')

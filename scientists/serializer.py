@@ -3,5 +3,6 @@ from scientists.models import Scientists
 
 
 class ScientistSerializers(serializers.ModelSerializer):
-    model = Scientists
-    fields = ('id', 'fullname', 'position','descriptions','image')
+    class Meta:
+        model = Scientists
+        fields = ('id', 'fullname', 'position','descriptions','image')
