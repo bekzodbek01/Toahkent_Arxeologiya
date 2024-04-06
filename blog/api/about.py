@@ -13,7 +13,6 @@ def list_about(request):
     serializer = AboutSerializers(about,many=True)
     return Response(serializer.data)
 
-
 # Detail
 @api_view(['POST'])
 def detail_about(request,pk):
@@ -24,4 +23,5 @@ def detail_about(request,pk):
 
     serializer = AboutSerializers(about)
     return Response(serializer.data)
+
 
