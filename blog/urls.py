@@ -1,6 +1,6 @@
 from django.urls import path
-from blog.api.about import AboutListAPIView,AboutRetrieveAPIView
-from blog.api.archaeology import ArchaeologyRetrieveAPIView, ArchaeologyListViews
+from blog.api.about import detail_about,list_about
+from blog.api.archaeology import ArchaeologyListAPIView,detail_archaeology
 from blog.api.electronic import ElectronicListAPIView,ElectronicRetrieveAPIView
 from blog.api.items import ItemsListAPIView,ItemsRetrieveAPIView
 from blog.api.news import NewsListAPIView,NewsRetrieveAPIView
@@ -13,11 +13,11 @@ from blog.api.down import FileDownAsarView
 
 urlpatterns = [
 
-    path('about/',AboutListAPIView.as_view()),
-    path('about/<int:pk>/',AboutRetrieveAPIView.as_view()),
+    path('about/',list_about),
+    path('about/<int:pk>/',detail_about),
 
-    path('arxiv/',ArchaeologyListViews.as_view()),
-    path('arxiv/<int:pk>/',ArchaeologyRetrieveAPIView.as_view()),
+    path('arxiv/',ArchaeologyListAPIView.as_view()),
+    path('arxiv/<int:pk>/',detail_archaeology),
 
     path('electronic/',  ElectronicListAPIView.as_view()),
     path('electronic/<int:pk>/', ElectronicRetrieveAPIView.as_view()),
