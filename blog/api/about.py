@@ -11,3 +11,4 @@ class AboutListAPIView(ListAPIView):
 class AboutRetrieveAPIView(RetrieveAPIView):
     queryset = About.objects.all()
     serializer_class = AboutSerializers
+
