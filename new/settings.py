@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'ckeditor',
     "modeltranslation",
     'contact.apps.ContactConfig',
+    'drf_yasg',
 ]
 
 

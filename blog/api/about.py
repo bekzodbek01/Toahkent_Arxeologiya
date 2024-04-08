@@ -7,14 +7,14 @@ from django.http import Http404
 
 
 # Read (O'qish)
-@api_view(['POST'])
+@api_view(['GET'])
 def list_about(request):
     about = About.objects.all().order_by('id')
     serializer = AboutSerializers(about,many=True)
     return Response(serializer.data)
 
 # Detail
-@api_view(['POST'])
+@api_view(['GET'])
 def detail_about(request,pk):
     try:
         about = About.objects.get(pk=pk)
