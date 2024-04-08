@@ -9,3 +9,10 @@ class Scientists(models.Model):
     descriptions = RichTextField()
     create = models.DateTimeField(auto_now_add=True)
     update = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Scientist'
+        verbose_name_plural = 'Scientists'
+
+    def __str__(self):
+        return self.fullname

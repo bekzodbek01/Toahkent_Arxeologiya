@@ -7,6 +7,10 @@ class Contact(models.Model):
     email = models.EmailField(unique=True)
     description = RichTextField()
 
+    class Meta:
+        verbose_name = 'Contact'
+        verbose_name_plural = 'Contacts'
+
     def __str__(self):
         return self.full_name
 

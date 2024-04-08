@@ -7,3 +7,8 @@ class About(models.Model):
     video = models.FileField(upload_to='video', blank=True, null=True)
     link = models.URLField(verbose_name='link', blank=True, null=True)
 
+    class Meta:
+        verbose_name = 'About'
+        verbose_name_plural = 'Abouts'
+
+

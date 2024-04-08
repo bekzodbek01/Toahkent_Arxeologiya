@@ -22,10 +22,10 @@ urlpatterns = [
     path('electronic/', list_electronic, name='electronic-list'),
     path('electronic/<int:pk>/', electronic_detail, name='electronic-detail'),
 
-    path('items/', ItemsListAPIView, name='news-list'),
+    path('items/', ItemsListAPIView.as_view()),
     path('items/<int:pk>/', items_detail, name='news-detail'),
 
-    path('news/', NewsListAPIView, name='list_news'),
+    path('news/', NewsListAPIView.as_view()),
     path('news/<int:pk>/', news_detail, name='news_detail'),
 
     path('scientists/', list_scientists, name='list_scientists'),
