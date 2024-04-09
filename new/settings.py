@@ -165,7 +165,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Fanlar Akademiyasi",
     "site_logo": "Бабочка.jpg",
     "welcome_sign": "Xush Kelibsiz",
-    "copyright": "Jadidlar",
+    "copyright": "Archaeology",
     # "search_model": ["app.model_name"],
 
     "topmenu_links": [
