@@ -25,12 +25,10 @@ schema_view = drf_yasg_views.get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('blog.urls')),
-    path('admin/', admin.site.urls),
     # path('swagger/json/', schema_view.without_ui(cache_timeout=0),  name='schema-json'),
     # path('swagger/<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     # path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('', include('blog.urls')),
     path('admin/logout/', custom_admin_login, name="custom-admin-login"),
 ]
